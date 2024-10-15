@@ -69,8 +69,20 @@ const kittenThree = `<li class="card">
 
 list.innerHTML = 'kittenThree';
 
+//EJERCICIO 2
 
-const item=document.querySelector(".js-btn-add");
+//el elemento del + es span --- 
+
+// guarda el elemento en una variable
+const spanElement = document.querySelector(".js-btn-add");
+
+// Agrega un evento click a este botón -- spanElement es el +, por lo tanto es el boton
+spanElement.addEventListener("click", () => {
+
+
+
+})
+
 
 
 
