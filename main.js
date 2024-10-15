@@ -12,8 +12,7 @@ const kiienOne = <li class="card">
   <img
     class="card_img"
     src="https://dev.adalab.es/gato-siames.webp"
-    alt="siames-cat"
-  />
+    alt="siames-cat"/>
   <h3 class="card_title">Anastacio</h3>
   <h4 class="card_race">Siamés</h4>
   <p class="card_description">
@@ -30,8 +29,7 @@ const kittenTwo = <li class="card">
 <img
   class="card_img"
   src="https://dev.adalab.es/sphynx-gato.webp"
-  alt="sphynx-cat"
-/>
+  alt="sphynx-cat"/>
 <h3 class="card_title">Fiona</h3>
 <h4 class="card_race">Sphynx</h4>
 <p class="card_description">
