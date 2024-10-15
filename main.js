@@ -1,12 +1,12 @@
 'use strict';
-//añadir la clase data con JS//
-/*
- - seleccionar el elemento html que quiero modificar
- - Añado la clase a ese elemento que acabo de seleccionar
- */
+//Pasos:
+//cuando la usuaria haga click en el boton desplegar menú
+//tenemos que darle un evento al LI para que cuando la usuaria haga click se esconda el formulario (quitar collapsed)
 
-const list = document.querySelector('class');
+const item=document.querySelector(".js-btn-add");
 
-/*agregar el código del li desde HTML
-repetir este proceso por cada gatito*/
+
+const new-form.addEventListener ("click", )
+
+
 
