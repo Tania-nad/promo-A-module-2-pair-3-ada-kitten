@@ -18,7 +18,7 @@ Repetir este proceso por cada gatito */
 const list =  document.querySelector('.js-list');
 
 // añado el codigo de li dentro de una variable 
-const kiienOne = <li class="card">
+const kiienOne = `<li class="card">
 <article>
   <img
     class="card_img"
@@ -32,11 +32,11 @@ const kiienOne = <li class="card">
     hace 500 años, donde tuvo su origen muy posiblemente.
   </p>
 </article>
-</li>;
+</li>`; //hay que meterlo toda etiqueta <> entre comillas francesas ``
 
 list.innerHTML = 'kittenOne'; //Añade cada variable al html utilizando propiedad innerHTML.
 
-const kittenTwo = <li class="card">
+const kittenTwo = `<li class="card">
 <img
   class="card_img"
   src="https://dev.adalab.es/sphynx-gato.webp"
@@ -48,11 +48,11 @@ const kittenTwo = <li class="card">
   hasta con pinta de alienígena han llegado a definir a esta raza
   gatuna que se caracteriza por la «ausencia» de pelo.
 </p>
-</li>;
+</li>`;
 
 list.innerHTML = 'kittenTwo';
 
-const kittenThree = <li class="card">
+const kittenThree = `<li class="card">
 <img
   class="card_img"
   src="https://dev.adalab.es/maine-coon-cat.webp"
@@ -65,7 +65,7 @@ const kittenThree = <li class="card">
   bella mirada se ha convertido en una de sus señas de identidad.
   Sus ojos son grandes y las orejas resultan largas y en punta.
 </p>
-</li>;
+</li>`;
 
 list.innerHTML = 'kittenThree';
 
