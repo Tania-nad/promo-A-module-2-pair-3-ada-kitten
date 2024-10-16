@@ -69,6 +69,8 @@ const kittenThree = `<li class="card">
 
 list.innerHTML = 'kittenThree';
 
+
+
 //EJERCICIO 2
 
 //el elemento del + es span --- 
@@ -79,6 +81,7 @@ const spanElement = document.querySelector(".js-btn-add");
 // Agrega un evento click a este botón -- spanElement es el +, por lo tanto es el boton
 spanElement.addEventListener("click", () => {
 
+console.log ("Has hecho clic en el botón");
 
 
 })
