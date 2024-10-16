@@ -56,10 +56,6 @@ li {
   padding-right: 10px;
 }
 
-.fa, .fas {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-}
 
 .about-us {
   background-image: url('../img/fondo.jpeg');
