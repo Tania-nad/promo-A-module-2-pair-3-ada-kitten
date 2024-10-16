@@ -18,7 +18,7 @@ Repetir este proceso por cada gatito */
 const list =  document.querySelector('.js-list');
 
 // añado el codigo de li dentro de una variable 
-const kiienOne = `<li class="card">
+const kittenOne = `<li class="card">
 <article>
   <img
     class="card_img"
@@ -34,7 +34,7 @@ const kiienOne = `<li class="card">
 </article>
 </li>`; //hay que meterlo toda etiqueta <> entre comillas francesas ``
 
-list.innerHTML = 'kittenOne'; //Añade cada variable al html utilizando propiedad innerHTML.
+
 
 const kittenTwo = `<li class="card">
 <img
@@ -50,7 +50,7 @@ const kittenTwo = `<li class="card">
 </p>
 </li>`;
 
-list.innerHTML = 'kittenTwo';
+
 
 const kittenThree = `<li class="card">
 <img
@@ -67,7 +67,7 @@ const kittenThree = `<li class="card">
 </p>
 </li>`;
 
-list.innerHTML = 'kittenThree';
+list.innerHTML = kittenOne + kittenTwo + kittenThree;
 
 
 
