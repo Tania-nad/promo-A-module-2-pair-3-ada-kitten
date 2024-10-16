@@ -85,6 +85,17 @@ console.log ("Has hecho clic en el botón");
 
 
 })
+/* Cuando la usuaria haga click en "buscar", tiene que recoger el valor del input*/
+const searchButton = document.querySelector (".js_button-search");
+const description = document.querySelector(".js_in_search_desc");
+
+searchButton.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    const description = js_in_search_desc.value;
+
+});
+console.log(description)
+    
 
 
 
