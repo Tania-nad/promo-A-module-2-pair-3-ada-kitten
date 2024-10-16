@@ -81,7 +81,7 @@ const spanElement = document.querySelector(".js-btn-add");
 // Agrega un evento click a este botón -- spanElement es el +, por lo tanto es el boton
 spanElement.addEventListener("click", () => {
 
-console.log ("Has hecho clic en el botón");
+
 
 
 })
@@ -94,7 +94,25 @@ searchButton.addEventListener("click", (ev) => {
     const description = js_in_search_desc.value;
 
 });
-console.log(description)
+//acceder al texto de la descripción de cada gatito
+
+const kittenDesc1 =
+  "Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente.";
+
+const kittenDesc2 = 
+"Produce fascinación y curiosidad. Exótico, raro, bello, extraño...hasta con pinta de alienígena han llegado a definir a esta raza gatuna que se caracteriza por la «ausencia» de pelo.";
+
+const kittenDesc3 =
+"Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.";
+
+if (kittenDesc1.includes(description)){
+  //hay que completar el código a partir de aquí y no sé como 
+  
+
+}
+
+
+
     
 
 
