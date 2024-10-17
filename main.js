@@ -18,18 +18,23 @@ Repetir este proceso por cada gatito */
 const list =  document.querySelector('.js-list');
 
 // añado el codigo de li dentro de una variable 
+const kittenImage1 = "https://dev.adalab.es/gato-siames.webp";
+const kittenDesc1 =
+"Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente."; 
+const kittenRace1 = "Siamés";
+const kittenName1 = "Anastacio";
+
+
 const kittenOne = `<li class="card">
 <article>
   <img
     class="card_img"
-    src="https://dev.adalab.es/gato-siames.webp"
+    src= ${kittenImage1}
     alt="siames-cat"/>
-  <h3 class="card_title">Anastacio</h3>
+  <h3 class="card_title">${kittenName1}</h3>
   <h4 class="card_race">Siamés</h4>
-  <p class="card_description">
-    Porte elegante, su patrón de color tan característico y sus ojos
-    de un azul intenso, pero su historia se remonta a Asía al menos
-    hace 500 años, donde tuvo su origen muy posiblemente.
+  <p class="card_description"> ${kittenDesc1}
+    
   </p>
 </article>
 </li>`; //hay que meterlo toda etiqueta <> entre comillas francesas ``
@@ -85,6 +90,8 @@ spanElement.addEventListener("click", () => {
 
 
 })
+
+
 /* Cuando la usuaria haga click en "buscar", tiene que recoger el valor del input*/
 const searchButton = document.querySelector (".js_button-search");
 const description = document.querySelector(".js_in_search_desc");
@@ -96,8 +103,7 @@ searchButton.addEventListener("click", (ev) => {
 });
 //acceder al texto de la descripción de cada gatito
 
-const kittenDesc1 =
-  "Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente.";
+
 
 const kittenDesc2 = 
 "Produce fascinación y curiosidad. Exótico, raro, bello, extraño...hasta con pinta de alienígena han llegado a definir a esta raza gatuna que se caracteriza por la «ausencia» de pelo.";
@@ -107,9 +113,20 @@ const kittenDesc3 =
 
 if (kittenDesc1.includes(description)){
   //hay que completar el código a partir de aquí y no sé como 
-  
+  kittenDesc1.innerHTML = "Este es tu gatito"
 
 }
+
+
+// Tipos de eventos
+
+
+
+
+
+
+
+
 
 
 
