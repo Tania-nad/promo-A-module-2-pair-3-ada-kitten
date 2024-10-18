@@ -94,6 +94,7 @@ searchButton.addEventListener("click", (ev) => {
     const description = js_in_search_desc.value;
 
 });
+console.log("ha hecho click")
 //acceder al texto de la descripción de cada gatito
 
 const kittenDesc1 =
