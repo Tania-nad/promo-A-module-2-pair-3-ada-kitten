@@ -78,14 +78,17 @@ list.innerHTML = kittenOne + kittenTwo + kittenThree;
 
 //EJERCICIO 2
 
-//el elemento del + es span --- 
+/* cuando la usuaria haga click en + aparece el menú desplegable
+    seleccionar el elemento html (botón y los inputs)
+    cuando la usuaria haga click en el botón, mostrar el formulario 
 
-// guarda el elemento en una variable
+*/
 const spanElement = document.querySelector(".js-btn-add");
 
-// Agrega un evento click a este botón -- spanElement es el +, por lo tanto es el boton
-spanElement.addEventListener("click", () => {
 
+spanElement.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("click");
 
 
 
