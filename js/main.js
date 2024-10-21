@@ -111,7 +111,7 @@ const kittenDesc2 =  "Produce fascinación y curiosidad. Exótico, raro, bello, 
 const kittenDesc3 = "Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.";
 
 
-if (kittenDesc1.includes)
+
 
 
 
