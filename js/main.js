@@ -21,55 +21,65 @@ const inputDescription = document.querySelector(".js_in_search_desc");
 
 
 
-const kittenImage1 = "https://dev.adalab.es/gato-siames.webp";
-const kittenRace1 = "Siamés";
-const kittenName1 = "Anastacio";
+//ejercicio objetos 
 
+const kittenData_1 = {
+  image: "https://dev.adalab.es/gato-siames.webp",
+  name: "Anastacio",
+  desc: "Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente.", 
+  race: "Siamés",
+}
+
+const kittenData_2 = {
+  image: "https://dev.adalab.es/sphynx-gato.webp",
+  name: "Fiona",
+  desc: "Produce fascinación y curiosidad. Exótico, raro, bello, extraño...hasta con pinta de alienígena han llegado a definir a esta raza gatuna que se caracteriza por la «ausencia» de pelo.",
+  race: "Sphynx",
+
+}
+
+const kittenData_3 = {
+  image: "https://dev.adalab.es/sphynx-gato.webp",
+  name: "Cielo", 
+  desc: "Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.",
+  race: "Maine Coon",
+
+}
 
 const kittenOne = `<li class="card">
 <article>
   <img
     class="card_img"
-    src= ${kittenImage1}
+    src= ${kittenData_1.image}
     alt="siames-cat"/>
-  <h3 class="card_title">${kittenName1}</h3>
-  <h4 class="card_race">${kittenRace1}</h4>
-  <p class="card_description"> ${kittenDesc1}
-    </p>
+  <h3 class="card_title">${kittenData_1.name}</h3>
+  <h4 class="card_race">${kittenData_1.race}</h4>
+  <p class="card_description"> ${kittenData_1.desc}</p>
  </article>
-
  </li>`; //hay que meterlo toda etiqueta <> entre comillas francesas ``
 
-
-const kittenImage2 = "https://dev.adalab.es/sphynx-gato.webp";
-const kittenRace2 = "Sphynx";
-const kittenName2 = "Anastacio";
 
  const kittenTwo = `<li class="card">
  <img
    class="card_img"
-   src= ${kittenImage2}
+   src= ${kittenData_2.image}
    alt="sphynx-cat"/>
- <h3 class="card_title">Fiona</h3>
- <h4 class="card_race">${kittenRace2}</h4>
- <p class="card_description">${kittenDesc2}
-  </p>
+ <h3 class="card_title">${kittenData_2.name}</h3>
+ <h4 class="card_race">${kittenData_2.race}</h4>
+ <p class="card_description">${kittenData_2.desc}</p>
  </li>`;
 
- const kittenImage3 = "https://dev.adalab.es/sphynx-gato.webp";
- const kittenRace3 = "Maine Coon";
- const kittenName3 = "Cielo";
+
 
  const kittenThree = `<li class="card">
  <img
    class="card_img"
-   src=${kittenImage3}
+   src=${kittenData_3.image}
    alt="maine-coon-cat"
  />
- <h3 class="card_title">${kittenName3}</h3>
- <h4 class="card_race">${kittenRace3}</h4>
- <p class="card_description">${kittenDesc3}
- </p>
+ <h3 class="card_title">${kittenData_3.name}</h3>
+ <h4 class="card_race">${kittenData_3.race}</h4>
+ <p class="card_description">${kittenData_3.desc}</p>
  </li>`;
 
 //  list.innerHTML = kittenOne + kittenTwo + kittenThree;
@@ -99,16 +109,12 @@ bottonDropDown.addEventListener("click", function() {
 });
 
 //Cuando la usuaria hace click en Buscar, tienes que recoger el valor del input de la descripción
-searchButton.addEventListener("click", (ev) => {
+bottonSearch.addEventListener("click", (ev) => {
   ev.preventDefault();
   const descrSearchText = input_search_desc.value; // Recoge el valor del input de la descripción en una variable
 });
 
 
-
-const kittenDesc1 = "Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente."; 
-const kittenDesc2 =  "Produce fascinación y curiosidad. Exótico, raro, bello, extraño...hasta con pinta de alienígena han llegado a definir a esta raza gatuna que se caracteriza por la «ausencia» de pelo.";
-const kittenDesc3 = "Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.";
 
 
 
