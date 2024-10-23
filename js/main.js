@@ -1,6 +1,7 @@
 'use strict';
 // añadir la clase js-list 
 
+
 const listOfCats = document.querySelector('.js-list')
 
 /* Agregar el código del li desde HTMl 
@@ -19,8 +20,7 @@ const list =  document.querySelector('.js-list');
 
 // añado el codigo de li dentro de una variable 
 const kittenImage1 = "https://dev.adalab.es/gato-siames.webp";
-const kittenDesc1 =
-"Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente."; 
+
 const kittenRace1 = "Siamés";
 const kittenName1 = "Anastacio";
 
@@ -96,30 +96,38 @@ spanElement.addEventListener("click", (event) => {
 
 
 /* Cuando la usuaria haga click en "buscar", tiene que recoger el valor del input*/
+ //NOS HEMOS QUEDADO POR AQUÍ LUNES 21/10
+const kittenDesc1 =
+"Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos hace 500 años, donde tuvo su origen muy posiblemente."; 
+const kittenDesc2 = 
+"Produce fascinación y curiosidad. Exótico, raro, bello, extraño...hasta con pinta de alienígena han llegado a definir a esta raza gatuna que se caracteriza por la «ausencia» de pelo.";
+const kittenDesc3 =
+"Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.";
 const searchButton = document.querySelector (".js_button-search");
 const description = document.querySelector(".js_in_search_desc");
 
+
 searchButton.addEventListener("click", (ev) => {
     ev.preventDefault();
-    const description = js_in_search_desc.value;
+    const descriptionValue = description.value;
+    console.log("la usuaria ha hecho click");
+
+
+    if (kittenDesc1.includes(descriptionValue)){
+      //hay que completar el código a partir de aquí y no sé como 
+      kittenDesc1.innerHTML = "Este es tu gatito"
+    
+    }
 
 });
-console.log("ha hecho click")
+
 //acceder al texto de la descripción de cada gatito
 
 
 
-const kittenDesc2 = 
-"Produce fascinación y curiosidad. Exótico, raro, bello, extraño...hasta con pinta de alienígena han llegado a definir a esta raza gatuna que se caracteriza por la «ausencia» de pelo.";
 
-const kittenDesc3 =
-"Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta.";
 
-if (kittenDesc1.includes(description)){
-  //hay que completar el código a partir de aquí y no sé como 
-  kittenDesc1.innerHTML = "Este es tu gatito"
 
-}
 
 
 // Tipos de eventos
