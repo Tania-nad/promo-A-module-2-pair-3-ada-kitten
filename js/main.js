@@ -48,43 +48,54 @@ const kittenData_3 = {
 
 
 
-// const kittenOne = `<li class="card">
-// <article>
-//   <img
-//     class="card_img"
-//     src= ${kittenData_1.image}
-//     alt="siames-cat"/>
-//   <h3 class="card_title">${kittenData_1.name}</h3>
-//   <h4 class="card_race">${kittenData_1.race}</h4>
-//   <p class="card_description"> ${kittenData_1.desc}</p>
-//  </article>
-//  </li>`; //hay que meterlo toda etiqueta <> entre comillas francesas ``
+const kittenOne = `<li class="card">
+<article>
+  <img
+    class="card_img"
+    src= ${kittenData_1.image}
+    alt="siames-cat"/>
+  <h3 class="card_title">${kittenData_1.name}</h3>
+  <h4 class="card_race">${kittenData_1.race}</h4>
+  <p class="card_description"> ${kittenData_1.desc}</p>
+ </article>
+ </li>`; //hay que meterlo toda etiqueta <> entre comillas francesas ``
 
 
-//  const kittenTwo = `<li class="card">
-//  <img
-//    class="card_img"
-//    src= ${kittenData_2.image}
-//    alt="sphynx-cat"/>
-//  <h3 class="card_title">${kittenData_2.name}</h3>
-//  <h4 class="card_race">${kittenData_2.race}</h4>
-//  <p class="card_description">${kittenData_2.desc}</p>
-//  </li>`;
+ const kittenTwo = `<li class="card">
+ <img
+   class="card_img"
+   src= ${kittenData_2.image}
+   alt="sphynx-cat"/>
+ <h3 class="card_title">${kittenData_2.name}</h3>
+ <h4 class="card_race">${kittenData_2.race}</h4>
+ <p class="card_description">${kittenData_2.desc}</p>
+ </li>`;
 
 
 
-//  const kittenThree = `<li class="card">
-//  <img
-//    class="card_img"
-//    src=${kittenData_3.image}
-//    alt="maine-coon-cat"
-//  />
-//  <h3 class="card_title">${kittenData_3.name}</h3>
-//  <h4 class="card_race">${kittenData_3.race}</h4>
-//  <p class="card_description">${kittenData_3.desc}</p>
-//  </li>`;
+ const kittenThree = `<li class="card">
+ <img
+   class="card_img"
+   src=${kittenData_3.image}
+   alt="maine-coon-cat"
+ />
+ <h3 class="card_title">${kittenData_3.name}</h3>
+ <h4 class="card_race">${kittenData_3.race}</h4>
+ <p class="card_description">${kittenData_3.desc}</p>
+ </li>`;
+/*
+Crear una lista con todos los gatitos (array)
+*/
+const kittenDataList = [kittenData_1, kittenData_2, kittenData_3];
 
-// listOfCats.innerHTML = kittenOne + kittenTwo + kittenThree;
+
+ 
+
+
+
+
+
+listOfCats.innerHTML = kittenOne + kittenTwo + kittenThree;
 
 
 //Creamos función renderKitten
@@ -102,7 +113,6 @@ bottonDropDown.addEventListener("click", (event) => {
 })
 
 // quitamos clase "collapsed" al formulario
-
 
 
 
